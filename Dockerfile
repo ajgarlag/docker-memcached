@@ -11,3 +11,4 @@ RUN sed -e 's/^-l /#-l /g' \
 
 EXPOSE 11211
 CMD ["/usr/share/memcached/scripts/systemd-memcached-wrapper"]
+STOPSIGNAL SIGINT

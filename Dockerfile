@@ -1,5 +1,7 @@
 FROM ajgarlag/debian:jessie
 
+RUN groupadd --system --gid 11211 memcache && useradd --system --gid memcache --uid 11211 memcache
+
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
         memcached \

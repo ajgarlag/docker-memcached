@@ -1,4 +1,4 @@
-FROM ajgarlag/debian:bullseye
+FROM ajgarlag/debian:bookworm
 
 RUN groupadd --system --gid 11211 memcache && useradd --system --gid memcache --uid 11211 memcache
 
